@@ -1,0 +1,23 @@
+{
+  "name": "revconf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleygwilliams/revconf.git"
+  },
+  "keywords": [],
+  "author": "ag_dubs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleygwilliams/revconf/issues"
+  },
+  "homepage": "https://github.com/ashleygwilliams/revconf#readme",
+  "devDependencies": {
+    "live-server": "^0.9.2"
+  }
+}
