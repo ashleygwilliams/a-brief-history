@@ -1,1 +1,68 @@
-/* git hold */
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900);
+
+body {
+  color: white;
+}
+
+h1, h2 {
+  font-family: Orbitron, sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.left-pad h1 {
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* author */
+h3 {
+  text-align: right;
+  margin-right: 50px;
+}
+
+h3::before {
+  content: '—';
+}
+
+/* source */
+h5 {
+  position: absolute;
+  bottom: 10px;
+  font-weight: 400;
+  margin-right: 20px;
+  font-size: 0.5em;
+}
+
+blockquote {
+  font-size: 2em;
+  font-style: italic;
+}
+
+blockquote::before {
+  content: '“';
+  position: absolute;
+  display: inline-block;
+  margin-left: -2.1em;
+  width: 2em;
+  text-align: right;
+  font-size: 90px;
+}
+
+.highlight {
+  text-shadow: 3px 1px 0px #B8860B;
+}
+
+.remark-slide-content {
+  background-color: #2A2947;
+  position: relative;
+}
