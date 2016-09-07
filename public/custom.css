@@ -1,11 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900|Merriweather:400,900,400italic);
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
 }
 
-h1, h2 {
-  font-family: Orbitron, sans-serif;
+blockquote {
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+  font-style: italic;
 }
 
 h1 {
@@ -16,12 +19,22 @@ h2 {
   font-weight: 500;
 }
 
-.left-pad h1 {
-  font-family: "Comic Sans MS", sans-serif;
-}
-
 img {
   max-width: 100%;
+}
+
+a, a:active, a:visited {
+  color: #008B8B;
+}
+
+.space-turtle h1, .space-turtle h2 {
+  background-color: #008B8B;
+  color: white;
+  padding: 10px 20px;
+}
+
+.turtle {
+  position: absolute;
 }
 
 /* author */
@@ -59,7 +72,7 @@ blockquote::before {
 }
 
 .highlight {
-  text-shadow: 3px 1px 0px #B8860B;
+  text-shadow: 3px 1px 0px #008B8B;
 }
 
 .remark-slide-content {
