@@ -1,5 +1,4 @@
 # a brief history and (mis)history of modularity
-> http://revolutionconf.com/
 
 ## up and running
 
