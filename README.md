@@ -1,4 +1,4 @@
-#Revolution Conf
+# a brief history and (mis)history of modularity
 > http://revolutionconf.com/
 
 ## up and running
@@ -24,4 +24,5 @@ Modularity is a term so common in today’s software industry, that it’s easy 
 
 ## Notes
 
-https://gist.github.com/ashleygwilliams/da4b1374c357e1772a9a
+- https://gist.github.com/ashleygwilliams/79029d9d36804ad2c37a633062591618
+- https://gist.github.com/ashleygwilliams/da4b1374c357e1772a9a
