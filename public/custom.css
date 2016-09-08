@@ -5,6 +5,12 @@ body {
   color: white;
 }
 
+.no {
+  position: absolute;
+  top: -112px;
+  left: 0;
+}
+
 blockquote {
   font-family: 'Merriweather', serif;
   font-size: 2em;
