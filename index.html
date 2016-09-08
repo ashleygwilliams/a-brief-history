@@ -165,11 +165,6 @@ class: middle, center
 ---
 class: middle, center
 
-![reuse](public/images/reuse1.png)
-
----
-class: middle, center
-
 ![reuse](public/images/reuse.png)
 
 ---
@@ -219,6 +214,13 @@ background-image: url(public/images/space2.jpg)
 ---
 class: middle, center
 
+<iframe width="700" height="450" src="https://www.youtube.com/embed/99u3AwgA1AA" frameborder="0" allowfullscreen></iframe>
+
+#### https://anvaka.github.io/allnpmviz3d/
+
+---
+class: middle, center
+
 ![packages people 'npm install' a lot](public/images/packages.png)
 
 ##### http://npmjs.com. Accessed 7 September 2016.
@@ -242,13 +244,18 @@ class: middle, center
 ---
 class: middle, center
 
+# why so many modules?
+
+---
+class: middle, center
+
 # `require('dijkstra');` 
 ![dijkstra](public/images/dijkstra.jpg)
 
 ---
 class: middle, left
 
-> The programmer is in the unique position... He has
+> The programmer is in the unique position... They have
 > to be able to think in terms of conceptual hierarchies that are much deeper than a single mind ever
 > needed to face before... the automatic computer confronts us
 > with a radically new intellectual challenge that has no precedent in our history.
@@ -256,6 +263,11 @@ class: middle, left
 ### Edsgar Dijkstra
 
 ##### On the cruelty of really teaching computing science, EWD1036-0.
+
+---
+class: middle, center
+
+# modularity is a way of addressing this challenge
 
 ---
 class: middle, center, space-turtle
@@ -270,10 +282,20 @@ class: middle, left
 > Modular programming is a software design technique that
 > emphasizes separating the functionality of a program into
 > independent, interchangeable modules, such that each contains
-> everything necessary to execute only one aspect of the desired
-> functionality.
+> everything necessary to execute only .highlight[one aspect of the desired]
+> .highlight[functionality.]
 
 ##### Modular Programming. Wikipedia. https://en.wikipedia.org/wiki/Modular_programming. Accessed 9 May 2016.
+
+---
+class: middle, center
+
+# "one aspect"
+
+---
+class: middle, center
+
+# small modules philosophy
 
 ---
 class: middle, left
@@ -314,6 +336,16 @@ class: middle, center
 ---
 class: middle, center
 
+![left-pad](public/images/left-pad-press1.png)
+
+---
+class: middle, center
+
+![left-pag](public/images/left-pad-press2.png)
+
+---
+class: middle, center
+
 ![shit](public/images/shit1.png)
 
 ---
@@ -322,6 +354,44 @@ class: middle, center
 ![shit](public/images/shit2.png)
 
 ---
+class: middle, center
+
+![left-pad](public/images/left-pad.png)
+
+---
+class: middle, center
+
+# did we forget to program when we stopped writing C?
+
+--
+
+# ... or when we stopped writing assembly?
+
+--
+
+# ... or when we stopped doing electrical engineering?
+
+---
+class: center, middle
+
+# no true programmer!
+
+---
+class: center, middle
+
+# no true scotsman!
+
+---
+class: center, middle
+
+# no true programmer
+
+--
+class: center
+
+.no[![no](public/images/no.gif)]
+---
+
 class: middle, left
 
 > When applications are done well, they are just the really application-specific,
@@ -335,17 +405,17 @@ class: middle, left
 ---
 class: middle, center
 
-# communism all the way down?
+![communism all the way down](public/images/communism.jpg)
 
 ---
 class: middle, center
 
-![communism all the way down](public/images/communism.jpg)
+# commons are Hard...
 
---
-class: center
+---
+class: middle, center
 
-.no[![no](public/images/no.gif)]
+![rollingweekly](public/images/rollingweekly.jpg)
 
 ---
 class: middle, center
@@ -357,7 +427,7 @@ class: middle, center
 ---
 class: middle, left
 
-> A complex system that works in invariably found to have
+> A complex system that works is invariably found to have
 > .highlight[evovled from a simple system that worked]. A complex system
 > designed from scratch never works and cannot be patched up
 > to make it work. You have to start over with a simple system.
@@ -368,16 +438,8 @@ class: middle, left
 class: middle, center, space-turtle
 background-image: url(public/images/space13.jpg)
 
-# what is complexity?
-![turtle](public/images/turtle3.png)
-
----
-class: middle, center, space-turtle
-background-image: url(public/images/space13.jpg)
-
 # what is simplicity?
 ![turtle](public/images/turtle3.png)
-
 
 ---
 class: center, middle
@@ -406,12 +468,7 @@ class: center, middle
 class: middle, center, space-turtle
 background-image: url(public/images/space17.jpg)
 
-# Why can order in the universe deteriorate even as it grows on Earth?
-
---
-class: center
-
-.no[![no](public/images/no.gif)]
+# why can order in the universe deteriorate even as it grows on Earth?
 
 ---
 class: middle, left
@@ -422,9 +479,11 @@ class: middle, left
 > meaningless.
 
 ---
-class: middle, center
+class: middle, center, space-turtle
+background-image: url(public/images/space17.jpg)
 
-# complexity IS ?????/?
+# it's not what the modules contain
+# it's how we put them together
 
 ---
 class: middle, center, space-turtle
@@ -442,6 +501,14 @@ class: middle, left
 
 ##### "The cost of small modules". Read the Tea Leaves. 15 August 2016.
 ---
+class: middle, left
+
+> Over 400ms is being spent simply walking the Browserify tree.
+
+### Sam Saccone
+
+##### "The cost of small modules". Read the Tea Leaves. 15 August 2016.
+---
 class: middle, center
 
 ![the cost of small modules](public/images/cost.jpg)
@@ -450,6 +517,84 @@ class: middle, center
 class: middle, center
 
 ![duckhorse](public/images/duckhorse.png)
+
+---
+class: middle, center
+
+# How many modules are in a typical web application?
+
+- ## requirebin.com: 91 modules
+- ## keybase.io: 365 modules
+- ## m.reddit.com: 1050 modules
+- ## Apple.com: 1060 modules
+
+##### https://nolanlawson.com/2016/08/15/the-cost-of-small-modules/
+
+---
+class: middle, center
+
+![loadtime](public/images/loadtime.png)
+
+---
+class: middle, center
+
+# it's not the size of the modules, it's the sheer number of them
+
+---
+class: middle, left
+
+> Yes, small modules are easier to write. Yes, they’re easier to test. Yes, it’s easier to adhere to semver. These are all things that make your life as a library author easier. As we’ve seen, they come at a cost for others.
+
+### Rich Harris
+
+##### https://medium.com/@Rich_Harris/small-modules-it-s-not-quite-that-simple-3ca532d65de4#.9qtsjcmd6
+
+---
+class: top, left
+
+# the small modules philosophy:
+
+--
+- # benefits the library writers
+
+--
+- # disadvantages application writes
+
+--
+
+- # harms end users
+
+---
+class: middle, center, space-turtle
+background-image: url(public/images/space23.jpg)
+
+# how did we end up here?
+
+---
+class: middle, center
+
+# `require('kuhn');`
+![kuhn](public/images/kuhn.jpg)
+
+---
+class: middle, left
+
+> Scientists work from models acquired through
+> education and through subsequent exposure to
+> the literature often .highlight[without quite knowing or]
+> .highlight[needing to know what characteristics have]
+> .highlight[given these models the status of community]
+> .highlight[paradigms.]
+
+### Thomas Kuhn
+
+##### Kuhn, Thomas. "The Structure of Scientific Revolutions", pg 46 (1962)
+
+
+---
+class: middle, center
+
+![inconvenience](public/images/inconvenience.png)
 
 ---
 class: middle, center
@@ -495,6 +640,23 @@ background-image: url(public/images/space18.jpg)
 ---
 class: middle, center
 
+# `require('hawking');`
+![hawking](public/images/hawking.jpg)
+
+---
+class: middle, left
+
+> It is an interesting reflection on the general climate of thought
+> before the twentieth century that .highlight[no one had suggested that the]
+> .highlight[universe was expanding or contracting.]
+
+### Steven Hawking
+
+##### A Brief History of Time. Bantam Books Trade Paperbacks: 6, 1988.
+
+---
+class: middle, center
+
 # `require('parnas');`
 ![david parnas](public/images/parnas.jpg)
 ![decomposing criteria paper](public/images/decomposingcriteria.png)
@@ -508,6 +670,11 @@ class: middle, left
 ### David Parnas
 
 ##### Parnas, D. L. 1972 On the Criteria To Be Used in Decomposing Systems into Modules. Association for Computing Machinery, Inc: Programming Techniques, 1053-1058.
+
+---
+class: middle, center
+
+# the goal of modularity is not to make things easier but to .highlight[hide the things that are hard]
 
 ---
 class: middle, center
@@ -529,28 +696,57 @@ class: middle, center
 <iframe width="640" height="480" src="https://www.youtube.com/embed/SG4_aW8LMng" frameborder="0" allowfullscreen></iframe>
 
 ---
-class: middle, center
-
-# `require('hawking');`
-![hawking](public/images/hawking.jpg)
-
----
-class: middle, left
-
-> It is an interesting reflection on the general climate of thought
-> before the twentieth century that .highlight[no one had suggested that the]
-> .highlight[universe was expanding or contracting.]
-
-### Steven Hawking
-
-##### A Brief History of Time. Bantam Books Trade Paperbacks: 6, 1988.
-
----
 class: middle, center, space-turtle
 background-image: url(public/images/space4.jpg)
 
 # how to computer?
 .turtle[![turtle hiding](public/images/turtle-hiding.png)]
+
+---
+class: middle, left
+
+> None of us are born knowing how to write software.
+
+### Rich Hickey
+
+---
+class: middle, center
+
+![failure](public/images/failure.png)
+
+---
+class: middle, center, space-turtle
+background-image: url(public/images/space12.jpg)
+
+# all is not lost, dogs know calculus
+
+---
+class: middle, center,space-turtle
+background-image: url(public/images/space12.jpg)
+
+![dogcalc](public/images/dogcalc.png)
+
+---
+class: middle, center,space-turtle
+background-image: url(public/images/space12.jpg)
+
+![dogcalc](public/images/smartcorgi1.png)
+
+---
+class: middle, center,space-turtle
+background-image: url(public/images/space12.jpg)
+
+![dogcalc](public/images/smartcorgi2.png)
+
+---
+class: middle, center,space-turtle
+background-image: url(public/images/space12.jpg)
+
+# corgis are made of star stuff
+
+--
+
+# and so are we
 
 ---
 class: middle, center
@@ -570,7 +766,7 @@ class: middle, center
 ![tef](public/images/tef.jpg)
 
 ---
-class: middle, center
+class: middle, left
 
 > Write code that is easy to delete, not easy to extend.
 > Instead of building re-usable software, we should try to build disposable software.
@@ -579,59 +775,30 @@ class: middle, center
 ### Tef
 
 ##### http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to
----
-class: middle, center
-
-# Step 0: Don’t write code
-
-
 
 ---
-class: middle, center
+class: middle, center, space-turtle
+background-image: url(public/images/space20.jpg)
 
-# Step 1: Copy-paste code
-
----
-class: middle, center
-
-# Step 2: Don’t copy paste code
+# repeat yourself to avoid creating dependencies, but don’t repeat yourself to manage them
 
 ---
-class: middle, center
+class: middle, center, space-turtle
+background-image: url(public/images/space15.jpg)
 
-# Step 3: Write more boilerplate
-
----
-class: middle, center
-
-# Step 4: Don’t write boilerplate
+# layer your code too: build simple-to-use APIs out of simpler-to-implement but clumsy-to-use parts. 
 
 ---
-class: middle, center
+class: middle, center, space-turtle
+background-image: url(public/images/space12.jpg) 
 
-# Step 5: Write a big lump of code
-
----
-class: middle, center
-
-# Step 6: Break your code into pieces
+# split your code: isolate the hard-to-write and the likely-to-change parts from the rest of the code, and each other.
 
 ---
-class: middle, center
+class: middle, center, space-turtle
+background-image: url(public/images/space19.jpg)
 
-# Step 7: Keep writing code
-
----
-class: middle, left
-
-> None of us are born knowing how to write software.
-
-### Rich Hickey
-
----
-class: middle, center
-
-![failure](public/images/failure.png)
+# don’t try to do all of these things at the same time, and maybe don’t write so much code in the first place.
 
 ---
 class: middle, center
@@ -644,28 +811,44 @@ class: middle, left
 # spacetime
 ## refers to whatever external reality underlies our collective experiences of the space between things and the time between events.
 
-"Are Space and Time An Illusion" PBS Space Time, https://www.youtube.com/watch?v=YycAzdtUIko.
+##### "Are Space and Time An Illusion" PBS Space Time, https://www.youtube.com/watch?v=YycAzdtUIko.
 ---
 class: middle, center
 
 # why not just time? why not just space?
+
+---
+class: middle, center
+
 # why add space time as an extra concept?
 
 ---
 class: middle, left
 
-# Suppose 2 observers are moving at relative speeds to each other...
+## Suppose 2 observers are moving at relative speeds to each other...
 
-- they can't agree on how much time passes between events
-- they can't agree on how much space
-- they can't EVEN agree on the chronological order of events 
+- ## they can't agree on how much time passes between events
+- ## they can't agree on how much space
+- ## they can't EVEN agree on the chronological order of events 
 
-... yet neither of them is wrong.
 ---
 class: middle, center
 
-# ... in fact, the only thing the two observers can agree on is Causality.
-![causal link](public/images/causallink.gif)
+# ... yet neither of them is wrong.
+---
+class: center, middle
+
+# what is time is a tough question, it's not even the full question
+
+---
+class: center, middle
+
+# what is modularity is a tough question, it's not even the full question
+
+---
+class: center, middle
+
+![julia how to be a wizerd](public/images/askhardquestion.png)
 
 ---
 class: left, middle
